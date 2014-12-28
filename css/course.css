@@ -10,10 +10,6 @@ body {
    margin: 0 5em;
 }
 
-a {
-
-}
-
 em {
    font-style: italic;
 }
@@ -75,7 +71,6 @@ pre {
 
 ol, ul {
    padding-left: 3em;
-   padding-bottom: 0.8em;
 }
 
 li {
@@ -85,9 +80,14 @@ li {
 /* links */
 a {
    text-decoration: none;
-   /*color: black;*/
-   border-bottom: 1px dotted black;
+   color: blue;
+   border-bottom: 1px dotted blue;
 }
 a:hover {
    font-weight: bold;
+   border-bottom-style: solid;
+}
+a:visited {
+   color: purple;
+   border-color: purple;
 }
