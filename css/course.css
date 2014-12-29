@@ -95,3 +95,20 @@ a:visited {
 .small {
    font-size: 56.25%
 }
+
+dl {
+   padding: 0.5em;
+   border-top: 1px solid #CCC;
+   border-bottom: 1px solid #CCC;
+}
+dt {
+   float: left;
+   clear: left;
+   width: 120px;
+   text-align: right;
+   font-weight: bold;
+}
+dd {
+   margin: 0 0 0 150px;
+   padding: 0 0 0.5em 0;
+}
