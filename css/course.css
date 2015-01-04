@@ -104,11 +104,11 @@ dl {
 dt {
    float: left;
    clear: left;
-   width: 120px;
+   width: 10em;
    text-align: right;
    font-weight: bold;
 }
 dd {
-   margin: 0 0 0 150px;
+   margin: 0 0 0 11em;
    padding: 0 0 0.5em 0;
 }
