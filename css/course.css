@@ -51,6 +51,7 @@ h4 {
 code {
 /*   font-family: Consolas, monaco, monospace;*/
    font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+   background-color: #EDEDED;
 }
 h1 code, h2 code {
    font-weight: bold;
