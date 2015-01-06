@@ -114,6 +114,19 @@ dd {
    padding: 0 0 0.5em 0;
 }
 
+table {
+   margin: 1em 30%;
+   border-collapse: collapse;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+}
+th,td {
+   padding: 0.2em 1em;
+}
+thead {
+   border-bottom: 1px solid #888;
+}
+
 @media only print {
    body {
       margin: 0;
