@@ -67,8 +67,7 @@ pre {
    overflow-x: scroll;
    padding: 0.2em;
    font-size: 90%;
-   margin-left: 1em;
-   margin-right: 1em;
+   margin: 0.5em 1em;
 }
 
 ol, ul {
