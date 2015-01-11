@@ -113,6 +113,9 @@ dd {
    margin: 0 0 0 11em;
    padding: 0 0 0.5em 0;
 }
+dd p {
+   margin-top: 0;
+}
 
 table {
    margin: 1em 30%;
