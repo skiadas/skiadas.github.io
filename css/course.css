@@ -127,6 +127,12 @@ thead {
    border-bottom: 1px solid #888;
 }
 
+blockquote {
+    border: 1px solid gray;
+    padding: 0 0.5em;
+    margin: 0.5em 2em;
+}
+
 @media only print {
    body {
       margin: 0;
