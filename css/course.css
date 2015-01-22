@@ -47,7 +47,8 @@ h3 {
 }
 h4 {
    font-weight: bold;
-   font-size: 133%;
+   font-size: 115%;
+   font-style: italic;
 }
 code {
 /*   font-family: Consolas, monaco, monospace;*/
