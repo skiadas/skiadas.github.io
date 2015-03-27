@@ -135,6 +135,12 @@ thead {
    border-bottom: 1px solid #888;
 }
 
+tr {
+  margin-bottom: 0.3em;
+  vertical-align: top;
+  border-bottom: 1px solid #E2E2E2;
+}
+
 blockquote {
     border: 2px solid gray;
     box-shadow: 0px 0px 1px 4px #ccc, 0px 0px 1px 5px #888;
