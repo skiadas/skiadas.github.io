@@ -22,6 +22,10 @@ strong {
    font-weight: bold;
 }
 
+h2 {
+   border-top: 1px solid #CCC;
+}
+
 /* Typography */
 body {
    font-size: 14pt;
