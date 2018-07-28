@@ -16,14 +16,16 @@ em {
 }
 
 h1, h2, h3, h4, p {
-   margin: 0.5em 0;
+   margin: 0.2em 0;
 }
 strong {
    font-weight: bold;
 }
 
 h2 {
-   border-top: 1px solid #CCC;
+   padding-left: 0.1em;
+   border: 1px solid #bbbbbb;
+   box-shadow: 2px 2px 7px 3px #ccc;
 }
 
 h2 + h3 {
@@ -31,7 +33,7 @@ h2 + h3 {
 }
 
 h3 {
-   margin-top: 2.5em;
+   margin-top: 2em;
 }
 
 /* Typography */
@@ -48,10 +50,11 @@ h1 {
    font-weight: normal;
    font-size: 203%;
    text-align: center;
-   border-bottom: 1px solid #CCC;
    padding-bottom: 0.2em;
+   margin-bottom: 0;
 }
 h2 {
+   color: mediumblue;
    font-weight: normal;
    font-size: 153%;
 }
@@ -65,33 +68,34 @@ h4 {
    font-style: italic;
 }
 code {
-/*   font-family: Consolas, monaco, monospace;*/
-   font-family: "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
-   background-color: #EDEDED;
+   font-family: "Roboto Mono", "Courier New", Courier, "Lucida Sans Typewriter", "Lucida Typewriter", monospace;
+   /*background-color: #EDEDED;*/
 }
 h1 code, h2 code {
    font-weight: bold;
 }
 
 p {
-   margin-top: 1em;
-   margin-bottom: 1em;
+   margin-top: 0.5em;
+   margin-bottom: 0.5em;
 }
 
 pre {
-   background-color: #F3F3F3;
+   background-color: #fafafa;
    overflow-x: scroll;
    padding: 0.5em;
    font-size: 90%;
-   margin: 0.5em 1em;
+   margin: 0.2em 0.1em;
+   border: 1px solid #ffaaaa;
+   border-radius: 8px;
 }
 
 ol, ul {
-   padding-left: 3em;
+   padding-left: 2.5em;
 }
 
 li {
-   margin: 0.4em;
+   margin: 0.2em;
 }
 
 /* links */
