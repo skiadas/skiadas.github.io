@@ -193,6 +193,7 @@ div .caption {
 @media only print {
    body {
       margin: 0;
+      font-size: 10pt;
    }
 }
 
