@@ -195,6 +195,9 @@ div .caption {
       margin: 0;
       font-size: 10pt;
    }
+   pre {
+      page-break-inside: avoid;
+   }
 }
 
 li ul {
