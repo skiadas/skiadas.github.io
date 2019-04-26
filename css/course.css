@@ -99,6 +99,11 @@ li {
    margin: 0.2em;
 }
 
+/* code formatting */
+body pre[class*="language-"], body code[class*="language-"] {
+   line-height: 1.2;
+}
+
 /* links */
 a {
    text-decoration: none;
