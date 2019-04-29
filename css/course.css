@@ -95,6 +95,10 @@ ol, ul {
    padding-left: 2.5em;
 }
 
+dd > ul {
+   padding-left: 1em;
+}
+
 li {
    margin: 0.2em;
 }
