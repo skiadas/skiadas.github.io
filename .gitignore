@@ -5,3 +5,4 @@ tests/makeHtml.hs
 tests/makeTex.hs
 tests/template.html
 tests/template.tex
+tests/mermaid-filter.err

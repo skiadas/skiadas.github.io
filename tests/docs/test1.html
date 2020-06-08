@@ -41,20 +41,18 @@ for (const el of els) {
 <script src="js/basic.js" type="text/javascript"></script>
 <script type="text/javascript">
 /* Script that fixes the relative links for css and js based on whether we are local or not */
-function findRelativePath() {
-  const fullPath = document.location.href;
-  const docsPart = fullPath.match(/.*docs/)[0];
-  return docsPart + "/";
-}
-const cssEl = jQuery(document.head).find('link[href^="css"]')[0];
-const jsEl = jQuery(document.body).find('script[src^="js"]')[0];
-const loc = document.location.href;
-let prefix = loc.match(/^htt/) ?
-  document.location.origin + "/" :
-  findRelativePath();
+function fixPaths() {
+  const cssEl = jQuery(document.head).find('link[href^="css"]')[0];
+  const jsEl = jQuery(document.body).find('script[src^="js"]')[0];
+  const loc = document.location.href;
+  let prefix = loc.match(/^htt/) ?
+    document.location.origin + "/" :
+    document.location.href.match(/.*docs/)[0] + "/";
 
-jQuery(cssEl).attr('href', prefix + jQuery(cssEl).attr('href'));
-jQuery(jsEl).attr('src', prefix + jQuery(jsEl).attr('src'));
+  jQuery(cssEl).attr('href', prefix + jQuery(cssEl).attr('href'));
+  jQuery(jsEl).attr('src', prefix + jQuery(jsEl).attr('src'));
+}
+jQuery(fixPaths);
 </script>
 </body>
 
