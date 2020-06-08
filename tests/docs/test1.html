@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <link href='https://fonts.googleapis.com/css?family=Roboto:400,700' rel='stylesheet' type='text/css'>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/themes/prism-dark.css" rel="stylesheet" />
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+  <meta http-equiv="Content-Style-Type" content="text/css" />
+  <meta name="generator" content="pandoc" />
+  <title>test1</title>
+  <style type="text/css">code{white-space: pre;}</style>
+<link rel="stylesheet" href="css/course.css" type="text/css" />
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-AMS-MML_HTMLorMML">
+</script>
+</head>
+<body>
+<h1 id="testing-of-markdownpandoc-stuff">Testing of markdown/pandoc stuff</h1>
+<p>First, a simple mermaid graph:</p>
+<p><img src="data:image/png;base64,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" alt="" /></p>
+<p>More stuff here?</p>
+<h2 id="a-section-here">A section here</h2>
+<p>We want to make sure content within the section and until the next section is somehow toggleable.</p>
+<h3 id="subsections-should-do-their-own-toggle">Subsections should do their own toggle</h3>
+<p>This should also be toggleable, and within the bigger toggle.</p>
+<h2 id="the-next-section-is-here">The next section is here</h2>
+<p>So some more stuff, here.</p>
+<script type="text/javascript">
+let els = document.getElementsByTagName("pre");
+for (const el of els) {
+  const lang = el.getAttribute("class");
+  if (lang != "") {
+      el.children[0].setAttribute("class", "language-"+lang);
+  }
+}
+
+</script>
+<script data-search-pseudo-elements src="https://kit.fontawesome.com/697621dfbe.js" crossorigin="anonymous"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js" type="text/javascript"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/prism.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prism/1.15.0/components/prism-java.js"></script>
+<script src="js/basic.js" type="text/javascript"></script>
+<script type="text/javascript">
+/* Script that fixes the relative links for css and js based on whether we are local or not */
+function findRelativePath() {
+  const fullPath = document.location.href;
+  const docsPart = fullPath.match(/.*docs/)[0];
+  return docsPart + "/";
+}
+const cssEl = jQuery(document.head).find('link[href^="css"]')[0];
+const jsEl = jQuery(document.body).find('script[src^="js"]')[0];
+const loc = document.location.href;
+let prefix = loc.match(/^htt/) ?
+  document.location.origin + "/" :
+  findRelativePath();
+
+jQuery(cssEl).attr('href', prefix + jQuery(cssEl).attr('href'));
+jQuery(jsEl).attr('src', prefix + jQuery(jsEl).attr('src'));
+</script>
+</body>
+
+</html>

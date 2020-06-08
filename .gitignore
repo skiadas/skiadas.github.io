@@ -1,0 +1,7 @@
+tests/Makefile
+tests/docs/css
+tests/docs/js
+tests/makeHtml.hs
+tests/makeTex.hs
+tests/template.html
+tests/template.tex
