@@ -1,4 +1,7 @@
+console.log("loading basic file");
+
 function my_setup() {
+   console.log("running my setup");
    create_toggleable_sections();
    $('.collapsable h2, .collapsable h3, .collapsable h4').click(function(ev) {
       $target = $(ev.target);
