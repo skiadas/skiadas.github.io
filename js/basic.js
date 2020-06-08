@@ -1,4 +1,4 @@
-$(function() {
+function my_setup() {
    create_toggleable_sections();
    $('.collapsable h2, .collapsable h3, .collapsable h4').click(function(ev) {
       $target = $(ev.target);
@@ -9,7 +9,7 @@ $(function() {
       ev.stopPropagation();
       return false;
    });
-});
+}
 
 function create_toggleable_sections() {
    group_together('h4', 'h1, h2, h3, h4');
@@ -23,4 +23,10 @@ function group_together(tag, until_tags) {
       $('<section class="collapsable collapsed"></section>').insertBefore(el)
          .append(el).append(els);
    });
+}
+
+if (document.readyState == "complete") {
+   my_setup;
+} else {
+   $(my_setup);
 }
