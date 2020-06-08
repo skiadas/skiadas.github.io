@@ -45,13 +45,23 @@ function fixPaths() {
   const cssEl = jQuery(document.head).find('link[href^="css"]')[0];
   const jsEl = jQuery(document.body).find('script[src^="js"]')[0];
   const loc = document.location.href;
-  let prefix = loc.match(/^htt/) ?
-    document.location.origin + "/" :
-    document.location.href.match(/.*docs/)[0] + "/";
+  const isLive = loc.match(/^htt/) != null;
+  let prefix = isLive ?
+    document.location.origin :
+    loc.match(/.*docs/)[0];
+  prefix += "/";
 
   jQuery(cssEl).attr('href', prefix + jQuery(cssEl).attr('href'));
-  jQuery(jsEl).attr('src', prefix + jQuery(jsEl).attr('src'));
+  const source = prefix + jQuery(jsEl).attr('src');
+  if (isLive) {
+    let fullString = '<script src="' + source;
+    fullString += '" type="text/javascript" async><\/script>';
+    jQuery(jsEl).after(fullString);
+  } else {
+    jQuery(jsEl).attr('src', source);
+  }
 }
+
 jQuery(fixPaths);
 </script>
 </body>
